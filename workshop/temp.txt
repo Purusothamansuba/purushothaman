@@ -1,0 +1,35 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const audio = document.getElementById("audio");
+    const playBtn = document.getElementById("pause-play");
+    const songList = document.getElementById("song-list");
+    const searchInput=document.getElementById("search-input");
+    const searchButton=document.getElementsByClassName("search-button");
+    // Toggle Play/Pause
+    playBtn.addEventListener("click", () => {
+        if (audio.paused) {
+            audio.play();
+            playBtn.textContent = "Pause";
+        } else {
+            audio.pause();
+            playBtn.textContent = "Play";
+        }
+    });
+    searchButton.addEventListener("click",() =>{
+        const query=searchInput.value.toLowerCase();
+        const song=document.getElementsByTagName("li");
+        for(let i=0;i<song.length;i++)
+        {
+            const songName=song[i].textContent.toLowerCase();
+            song[i].style.display = songName.includes(query) ? "" : "none";
+        }
+    });
+    // Change song on list item click
+    songList.querySelectorAll("li").forEach(item => {
+        item.addEventListener("click", () => {
+            const newSrc = item.getAttribute("data-src");
+            audio.src = newSrc;
+            audio.play();
+            playBtn.textContent = "Pause";
+        });
+    });
+});

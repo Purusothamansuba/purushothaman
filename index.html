@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="svg" href="icon.svg">
+    <script src="javascript.js" defer></script>
+    <title>Songify</title>
+</head>
+<body>
+<div class="nav_bar">
+    <img src="icon.svg" alt="Website Logo" width="50" height="50"> 
+    <h1>Welcome to Songify</h1>
+    <div class="nav_row">
+        <div class="search-bar">
+            <input id="search-input" type="text" placeholder="Search">
+            <button class="search-button" type="submit">&#128269;</button>
+        </div>
+        <a href="#">Home</a>
+        <a href="song.html" >Songs</a>
+        <a href="about.html">About</a>
+    </div>
+</div>
+<div class="song-player">
+    <div class="songs">
+        <audio id="audio" preload="metadata" >
+             <source src="">
+        </audio>
+        <div class="controls">
+            <button id="pause-play">play</button>
+            <input type="range" id="progress-bar" min="0" max="100">
+            <span id="current-time">0.00</span> / <span id="duration">0.00</span>
+        </div>
+        <ul id="song-list">
+            <li data-src="songs/Azhagin_Azhagu.mp3">Azhagin Azhagu</li>
+            <li data-src="songs/Dhandiya.mp3">Dhandiya</li>
+            <li data-src="songs/Enna_Vilai.mp3">Enna Vilai</li>
+            <li data-src="songs/Ennai_Kaanavillaiye.mp3">Ennai Kaanavillaiye</li>
+            <li data-src="songs/Hello_Doctor.mp3">Hello Doctor</li>
+            <li data-src="songs/Hey_Sita_Hey_Rama.mp3">Hey Sita Hey Rama</li>
+            <li data-src="songs/Kaalangal_Thaandi.mp3">Kaalangal Thaandi</li>
+            <li data-src="songs/Kaathalenum.mp3">Kaathalenum</li>
+            <li data-src="songs/Kalluri_Salai.mp3">Kalluri Salai</li>
+            <li data-src="songs/Kannukkulle.mp3">Kannukkulle</li>
+            <li data-src="songs/Kurumugil.mp3">Kurumugil</li>
+            <li data-src="songs/Kurunchiragu.mp3">Kurunchiragu</li>
+            <li data-src="songs/Mustafa_Mustafa.mp3">Mustafa Mustafa</li>
+            <li data-src="songs/Nenichapadi.mp3">Nenichapadi</li>
+            <li data-src="songs/O_Vennila.mp3">O Vennila</li>
+            <li data-src="songs/Oh_Maria_Oh_Maria.mp3">Oh Maria Oh Maria</li>
+            <li data-src="songs/Paer.mp3">Paer</li>
+            <li data-src="songs/Piriyadhey.mp3">Piriyadhey</li>
+            <li data-src="songs/Roja_Roja.mp3">Roja Roja</li>
+            <li data-src="songs/Sita_Ramam_Theme.mp3">Sita Ramam Theme</li>
+            <li data-src="songs/Siva Raathiri.mp3">Siva Raathiri</li>
+            <li data-src="songs/Sundari.mp3">Sundari</li>
+            <li data-src="songs/Thendrale.mp3">Thendrale</li>
+            <li data-src="songs/Thoodha.mp3">Thoodha</li>
+            <li data-src="songs/Uraiyum_Theeyil.mp3">Uraiyum Theeyil</li>
+            <li data-src="songs/Alaipayuthey.mp3">Alaipayuthey</li>
+            <li data-src="songs/Anbendra.mp3">Anbendra</li>
+            <li data-src="songs/Endrendrum_Punnagai.mp3">Endrendrum Punnagai</li>
+            <li data-src="songs/Evano_Oruvan.mp3">Evano Oruvan</li>
+            <li data-src="songs/Kadhal_Sadugudu.mp3">Kadhal Sadugudu</li>
+            <li data-src="songs/Maangalyam.mp3">Maangalyam</li>
+            <li data-src="songs/Manna_Madurai.mp3">Manna Madurai</li>
+            <li data-src="songs/Pachchai_Nirame.mp3">Pachchai Nirame</li>
+            <li data-src="songs/Poo_Pookum_Osai.mp3">Poo Pookum Osai</li>
+            <li data-src="songs/September_Madham.mp3">September Madham</li>
+            <li data-src="songs/Snehithane_Snehithane.mp3">Snehithane Snehithane</li>
+            <li data-src="songs/Strawberry_Kannae.mp3">Strawberry Kannae</li>
+            <li data-src="songs/Thanga_Thamarai.mp3">Thanga Thamarai</li>
+            <li data-src="songs/Vennilavae.mp3">Vennilavae</li>
+            <li data-src="songs/Yaro_Yarodi.mp3">Yaro Yarodi</li>
+            <li data-src="songs/Yen_Azhagu_Enna.mp3">Yen Azhagu Enna</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

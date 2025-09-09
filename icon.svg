@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168 168" width="168" height="168">
+  <!-- Circular background -->
+  <circle cx="84" cy="84" r="84" fill="#f05454"/>
+  
+  <!-- Inverted curved lines (upside down) -->
+  <g transform="translate(84, 84) rotate(180) translate(-84, -84)">
+    <!-- Top curve (largest) -->
+    <path d="M42 60c14-8 28-8 42 0s28 8 42 0" stroke="white" stroke-width="6" fill="none" stroke-linecap="round"/>
+    
+    <!-- Middle curve -->
+    <path d="M46 76c12-6 24-6 38 0s26 6 38 0" stroke="white" stroke-width="5" fill="none" stroke-linecap="round"/>
+    
+    <!-- Bottom curve (smallest) -->
+    <path d="M50 92c10-5 20-5 34 0s24 5 34 0" stroke="white" stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

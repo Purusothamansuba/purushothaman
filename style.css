@@ -1,0 +1,184 @@
+/* ===== Base Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Global Styles ===== */
+body {
+    background-color: #121212;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== Navigation Bar ===== */
+.nav_bar {
+    text-align: center;
+    background-color: #1f1f1f;
+    padding: 20px 10px;
+    border-bottom: 1px solid #333;
+}
+
+.nav_bar h1 {
+    font-size: 1.8rem;
+    color: #f05454;
+}
+
+.nav_row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.nav_row a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+.nav_row a:hover {
+    background-color: #2e2e2e;
+}
+
+/* ===== Search Bar ===== */
+.search-bar {
+    display: flex;
+    margin: 10px;
+}
+
+.search-bar input {
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 6px 0 0 6px;
+    border: none;
+    outline: none;
+    width: 150px;
+}
+
+.search-bar button {
+    padding: 8px 12px;
+    font-size: 1rem;
+    background-color: #f05454;
+    color: white;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.search-bar button:hover {
+    background-color: #ff6b6b;
+}
+
+/* ===== Player Layout ===== */
+.song-player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.songs {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+.controls{
+  background-color: #1f1f1f ;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  gap:10px;
+  flex-wrap: wrap;
+  
+}
+audio {
+    width: 100%;
+    margin-bottom: 15px;
+    max-width: 100%;
+
+}
+
+.controls button {
+    background-color: #f05454;
+    color: white;
+    padding: 10px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+.controls button:hover {
+    background-color: #ff6b6b;
+}
+
+/* ===== Song List ===== */
+#song-list {
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0;
+}
+
+#song-list li {
+    background-color: #1f1f1f;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+#song-list li:hover {
+    background-color: #2e2e2e;
+}
+
+/* ===== Responsive Layout ===== */
+@media screen and (max-width: 480px) {
+    .nav_bar h1 {
+        font-size: 1.5rem;
+    }
+
+    .nav_row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-bar input,
+    .search-bar button {
+        width: 100%;
+        border-radius: 6px;
+    }
+
+    .search-bar button {
+        margin-top: 6px;
+    }
+
+    .controls button {
+        width: 100%;
+        max-width: 100%;
+    }
+    #progress-bar {
+        width: 100%;
+        height: 30px;
+        -webkit-appearance: none;
+        background: transparent;
+        touch-action: manipulation;
+        pointer-events: none;
+    }
+
+
+}
